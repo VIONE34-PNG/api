@@ -1,0 +1,78 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f5f5, #d9d9d9, #b3b3b3, #999999); /* Gradiente suave de cinza claro a cinza escuro */
+  color: #333; /* Cor do texto em um tom escuro para bom contraste */
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333; /* Mantido escuro para contraste */
+}
+
+/* Estilos dos inputs de texto */
+input {
+  width: 100%;
+  max-width: 400px; /* Limita o tamanho máximo dos inputs */
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  background-color: #f2f2f2; /* Cinza muito claro para os inputs */
+  color: #333; /* Texto escuro para contraste */
+  font-size: 16px;
+}
+
+/* Estilos dos botões */
+button {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  margin: 15px 0;
+  background-color: #333; /* Cinza escuro para os botões */
+  color: white; /* Texto claro para contraste */
+  border: none;
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */
+}
+
+button:hover {
+  background-color: #555; /* Cinza mais claro ao passar o mouse */
+  transform: translateY(-3px); /* Levanta o botão ao passar o mouse */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra maior no hover */
+}
+
+button:active {
+  transform: translateY(1px); /* Efeito de "pressionar" o botão */
+}
+
+/* Centralização dos inputs e botões */
+input, button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error {
+  color: #ff4d4d; /* Vermelho para indicar erro */
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+/* Responsividade: garante que a tela seja amigável para dispositivos móveis */
+@media (max-width: 768px) {
+  input, button {
+    width: 90%;
+  }
+}
